@@ -34,5 +34,14 @@
     },
     "devDependencies": {
         "mocha": "*"
+    },
+    "wilton": {
+      "excludes": [
+        "examples",
+        "tests"
+      ],
+      "preMinifiedFiles": [
+        "fraction.js"
+      ]
     }
 }

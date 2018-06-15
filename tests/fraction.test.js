@@ -1,6 +1,9 @@
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var assert = require('assert');
+var describe = require('tape-compat').describe;
+var it = require('tape-compat').it;
 
-var Fraction = require('../fraction.js');
+var Fraction = require('fractionjs');
 
 var tests = [{
     set: "",
@@ -1202,6 +1205,7 @@ describe('Fraction', function() {
         };
       }
 
+      /* duktape
       it(String(tests[i].label || tests[i].set), function() {
         if (tests[i].expectError) {
           assert.throws(action, tests[i].expectError);
@@ -1209,6 +1213,7 @@ describe('Fraction', function() {
           assert.equal(action(), tests[i].expect);
         }
       });
+      */
 
     })(i);
   }
@@ -1474,3 +1479,5 @@ describe('Fraction NaN', function() {
     })(i);
   }
 });
+
+require = requireOrig;});
