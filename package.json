@@ -38,10 +38,8 @@
     "wilton": {
       "excludes": [
         "examples",
-        "tests"
-      ],
-      "preMinifiedFiles": [
-        "fraction.js"
+        "tests",
+        "test.js"
       ]
     }
 }
