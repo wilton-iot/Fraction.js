@@ -38,6 +38,8 @@
     "wilton": {
       "excludes": [
         "examples",
+        "bigfraction.js",
+        "fraction.d.ts",
         "tests",
         "test.js"
       ]
